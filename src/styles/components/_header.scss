@@ -32,6 +32,7 @@ header {
         height: 100%;
       }
     }
+
     .title {
       position: relative;
       overflow: hidden;
@@ -49,6 +50,7 @@ header {
           top: -8px;
         }
       }
+
       h1 {
         font-family: $font2;
         font-size: 1.5rem;
@@ -77,6 +79,7 @@ header {
         }
       }
     }
+
     .global-mkt {
       display: flex;
 
@@ -85,11 +88,13 @@ header {
         font-size: 1.1rem;
       }
     }
+
     .infos-mkt {
       @media screen and (max-width: 1150px) {
         margin-right: 0;
       }
     }
+
     .table-filters {
       grid-area: c;
       margin-top: 10px;
@@ -110,11 +115,13 @@ header {
             display: none;
 
             &:checked {
-              ~ label {
+              ~label {
                 background: $black2;
+                border: 1px solid $color1;
               }
             }
-            ~ label {
+
+            ~label {
               transition: 0.15s;
               padding: 2px 10px;
               border-radius: 10px;
@@ -133,12 +140,14 @@ header {
           border-radius: 10px;
           padding: 2px 10px;
           cursor: pointer;
+
           &:hover {
             filter: brightness(130%);
           }
 
           &.active {
             background: $black2;
+            border: 1px solid $color1;
           }
         }
 
@@ -154,6 +163,7 @@ header {
       }
     }
   }
+
   .global-chart {
     border-radius: 14px;
     overflow: hidden;
@@ -167,6 +177,7 @@ header {
       font-size: 0.8rem !important;
       letter-spacing: 1px;
     }
+
     .custom-tooltip {
       background: rgb(59, 59, 59);
       padding: 10px;
